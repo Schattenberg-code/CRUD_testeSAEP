@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS techparts;
+USE techparts;
+
+CREATE TABLE IF NOT EXISTS produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codigo INT UNIQUE NOT NULL,
+    nome VARCHAR(255) NOT NULL,
+    descricao VARCHAR(255) NOT NULL,
+    preco INT NOT NULL,
+    quantidade INT NOT NULL
+);
